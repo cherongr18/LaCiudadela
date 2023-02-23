@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,100);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/*header*/
+
+.contenido
+{
+background: #0e0e0e5d;
+width: 100%;
+height: 20vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+body{
+background-image: url('GIF.gif');
+background-attachment:fixed;
+background-position: center 25%;
+background-size: cover;
+transition: all 3s;
+}
+
+span{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    
+}
+nav ul li{
+    margin: 0 40px;
+    
+}
+nav ul li a{
+    color: #ece4e4;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+   
+    
+}
+nav ul li a:hover{
+    color: #209c81;
+}
+
+/*GAME*/
+.espacio{
+    width: 200px;
+    height: 200px;
+}
+.uno{
+
+    width: 50%;
+    height: 500px;
+    background: rgba(15, 15, 15, 0.722);
+    box-shadow: rgba(18, 18, 18, 0.56) 0px 22px 70px 4px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    margin-top: 80px;
+    
+}
+
+h1{
+    margin-right: 300px;
+    margin-left: 200px;
+    font-size: 35px;
+    color:hsl(180, 91%, 48%);
+    
+}
+
+h2{
+
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 25px;
+    color:hsl(180, 91%, 48%);
+    padding: 17px;
+    
+}
+
+
+.pe{
+font-size: 15px;
+margin-top: 10px;
+font-family: cursive;
+}
+
+#inicio{
+    margin-top: 10px;
+}
+
+
+.alter1
+{
+      background-color: rgba(255, 255, 255, 0.268);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      width: 300px;
+      height: 30px;
+      border-radius: 15px;
+      margin-top: 10px;
+      color: #0e0d0d;
+      margin-left: auto;
+      margin-right: auto;
+}
+.conteo{
+
+    border: 3px solid rgb(235, 227, 6);
+    border-radius: 15px;
+    background-color: rgba(242, 242, 231, 0.456);
+    width: 40%;
+    margin-left: 40%;
+    width: 60px;
+    height: 50px;
+    padding-top: 11px;
+    
+   
+    }
+.alter3
+    {
+          background-color: rgba(255, 255, 255, 0.268);
+          width: 200px;
+          height: 50px;
+          border-radius: 15px;
+          margin-top: 9px;
+          color: rgb(210, 194, 12);  
+          margin-left: 300px;
+          margin-right: 300px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         
+
+    }
+
+  .final{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+    color:hsl(180, 91%, 48%);
+    padding: 17px;
+
+  }
+
+  .Puntajemundial{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 27px;
+    color:hsl(180, 91%, 48%);
+    padding: 17px;
+    z-index: 3px;
+    margin-top: 100px;
+  }
+    
+
+
+.contenido3 {
+    display: none;
+}
+.final{
+    display: none;
+}
+
+img{
+    width: 420px;
+    height: 400px;
+    z-index: -100px;
+}

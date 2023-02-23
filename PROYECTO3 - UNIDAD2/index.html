@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaCiudadela</title>
+    <link rel="shortcut icon" href="logoo.png">
+    <link rel="stylesheet" href="LaCiudadela.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="personajes/personajes.css">
+
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+    <header>
+        <div class="contenido">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="personajes/personajes.html">PERSONAJES</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="caja" type="text" placeholder="Busca tu personaje...">
+            </div>
+            <li><button class="button-17" role="button" id="buscar">BUSCAR</button></li>
+        </div>
+        </header>
+
+        <div id="inicio">
+
+            <figure>
+                <a href="https://es.wikipedia.org/wiki/Rick_y_Morty"><img src="Rick_and_Morty.svg"></a>
+            </figure>
+    
+            <video controls autoplay poster="Rick_E_Morty-810x466.png">
+                <source src="RICK Y MORTY (Trailer español).mp4" type="video/mp4">
+            </video>
+
+        <div class="uno">
+        <p class="h3">La serie sigue las desventuras de un científico, 
+            Rick Sanchez, y su fácilmente influenciable nieto, 
+            Morty, quienes pasan el tiempo entre la vida doméstica 
+            y los viajes espaciales, temporales e intergalácticos.</p>
+    
+            <p class="link">Creadores del programa: Justin Roiland, Dan Harmon
+                Autores: Justin Roiland, Dan Harmon, Jessica Gao, 
+                Jeff Loveness, <a href="https://www.google.com/search?rlz=1C5CHFA_enPE1033PE1033&sxsrf=AJOqlzWsleoNvKVhBVc-VbpG3xhJGDLjow:1676960321817&q=rick+y+morty+autores&stick=H4sIAAAAAAAAAOPgE-LSz9U3qDIrMDLJ0pLMTrbSLykDoviCovz0osRcq_KizJLUouJFrCJFmcnZCpUKuflFJZUKiaUl-UWpxQAP7S8GQAAAAA&sa=X&ved=2ahUKEwj56qKC_KX9AhWaDrkGHVlgA6MQ44YBKAR6BAguEAY&biw=1273&bih=573&dpr=1">
+                    MÁS</a></p>
+        </div>
+        </div>
+
+        <main></main>
+
+  
+        <script>
+
+
+            $(document).ready(function(){
+
+                
+
+                $("#buscar").click(function(){
+                    $("#inicio").hide()
+                var enlace 
+
+                function getCharacters2(done) {
+                    const results = fetch(enlace);
+
+                         results
+                        .then(response => response.json())
+                        .then(data => {
+                          done(data)
+                 });
+                }
+
+
+                //Sacar la informacion de la caja de texto
+
+                var nombre = $("#caja").val()
+                console.log(caja)
+
+                for(var i=1;i<=826;i++)
+                {
+                    var enlace =`https://rickandmortyapi.com/api/character/${i}`
+
+                    getCharacters2(data => {
+
+
+                    if(data.name == nombre)
+                    {
+            //Creación de la tarjeta
+                    const article = document.createRange().createContextualFragment(/*html*/`
+
+                        <article>
+                            <div class="card__father">
+                                <div class="card">
+                                    <div class="card__front" style="background-image: url('${data.image}');">
+                                        <h1></h1>
+                                        <div class="bg"></div>
+                                        <div class="body__card_front">
+                                        </div>
+                                    </div>
+                                    <div class="card__back">
+                                        <div class="body__card_back">
+                                        <h5>${data.name}</h5>
+                                        <p class="pe">Status:</p><h6>${data.status}</h6>
+                                        <p class="pe">Species:</p><h6>${data.species}</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        `);
+
+        const main = document.querySelector("main");
+        main.append(article);
+
+        }
+    });
+}
+
+                })
+            })
+
+
+
+        </script>
+
+    
+</body>
+<script type="text/javascript" src="js/barba.min.js"></script>
+    <script src="LaCiudadela.js"></script>
+</html>

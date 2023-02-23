@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaCiudadela</title>
+    <link rel="shortcut icon" href="logoo.png">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contenido">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="personajes/personajes.html">PERSONAJES</a></li>
+                    <li><a href="https://www.adultswim.com/videos/rick-and-morty">MORE</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+    
+<div class="uno">
+        <div class="entretenimiento" id="contenido_2">
+            <h1 class="primero"> Cuanto sabes de 
+                RICK AND MORTY!
+               </h1>
+            <br>
+            <br>
+            <br>
+            <button class= "alter3" id="tema1" onclick="tema_1()">CONTINUAR</button>
+        </div>
+
+        <div class="contenido3" id="contenido_3">
+                            
+            <p id="tiempo" class="conteo">00:20</p>    
+            <h2 id="pregunta">  Contenido de la pregunta </h2>
+            <button class= "alter1" id="alternativa1" onclick="arreglar(numero_pregunta,0)"> Alternativa 1</button>
+            <br> 
+            <button class= "alter1" id="alternativa2" onclick="arreglar(numero_pregunta,1)"> Alternativa 2</button>
+            <br> 
+            <button class= "alter1" id="alternativa3" onclick="arreglar(numero_pregunta,2)"> Alternativa 3</button>
+            <br> 
+            <button class= "alter1" id="alternativa4" onclick="arreglar(numero_pregunta,3)"> Alternativa 4</button>
+     
+      </div>
+
+      <div class="final"  id = "final_js">
+
+        <h2 class="Puntajemundial"> Tu puntaje es:</h2>
+        <h2 id = "puntuacion" class="puntaje1"></h2>
+        <h2 class="final"> Gracias por jugar :)</h2>
+        <img src="Rick_and_Morty.svg">
+     </div> 
+
+</div>
+
+<div class="espacio">
+
+
+
+</div>
+    <script src="game.js"></script>
+    <script src="LaCiudadela.js"></script>
+</body>
+</html>
